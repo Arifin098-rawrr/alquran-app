@@ -7,7 +7,7 @@ export default function Navbar() {
       {/* Logo kiri */}
       <div className="w-[51px] h-[51px] rounded-[7px] overflow-hidden">
         <Image
-          src="/logo-left.png"
+          src="/Logo.png"
           alt="Logo Kiri"
           width={51}
           height={51}
@@ -15,7 +15,7 @@ export default function Navbar() {
         />
       </div>
 
-      <h1 className="text-xl font-semibold">Masjid Al-Furqon</h1>
+      <h1 className="text-xl font-semibold">YAYASAN HIDAYATURROHMAN</h1>
 
       <div className="flex items-center gap-2">
         <ThemeToggle />

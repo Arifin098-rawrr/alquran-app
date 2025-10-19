@@ -4,24 +4,40 @@ import { motion } from "framer-motion";
 export default function KegiatanSection() {
   const kegiatan = [
     { 
-      title: "Pengajian Rutin", 
-      desc: "Pengajian rutin diadakan setiap Senin-Kamis-Jumat untuk memperdalam ilmu agama." 
+      title: "MI HIDAYATURROHMAN", 
+      desc: [
+        "Terakreditasi A Nomor:038/BAN-SM-Prov/SK/2018",
+        "NSM: 111236030242",
+        "NPSN: 60721326"
+      ]
     },
     { 
-      title: "Kajian Remaja", 
-      desc: "Kajian khusus remaja untuk menumbuhkan keimanan dan kepedulian sosial." 
+      title: "MTs HIDAYATURROHMAN", 
+      desc: [
+        "Terakreditasi A Nomor:97/BAP-S/M-SK/X/2016",
+        "NSM: 121236030192",
+        "NPSN: 60729857"
+      ]
     },
     { 
-      title: "Bakti Sosial", 
-      desc: "Bakti sosial dilakukan tiap Minggu untuk membantu masyarakat sekitar/Memintal amal untuk masjid." 
+      title: "SMA HIRO", 
+      desc: [
+        "Terakreditasi B Nomor:100/BAP-S/M-SK/XI/2016",
+        "NSS: 302300402005",
+        "NPSN: 20613545"
+      ]
+    },
+    { 
+      title: "PONPES PUTRI HIDAYATURROHMAN", 
+      desc: [
+        "NSPP: 512280416719",
+      ]
     },
   ];
 
   const containerVariants = {
     hidden: {},
-    visible: {
-      transition: { staggerChildren: 0.15 },
-    },
+    visible: { transition: { staggerChildren: 0.15 } },
   };
 
   const cardVariants = {
@@ -32,7 +48,9 @@ export default function KegiatanSection() {
 
   return (
     <section className="bg-indigo-100 dark:bg-indigo-900 py-16 px-6 text-center">
-      <h2 className="text-3xl font-bold mb-12 text-gray-900 dark:text-white">Kegiatan Kami</h2>
+      <h2 className="text-3xl font-bold mb-12 text-gray-900 dark:text-white">
+        Jenjang Pendidikan
+      </h2>
 
       <motion.div
         className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto"
@@ -45,10 +63,17 @@ export default function KegiatanSection() {
             key={i}
             variants={cardVariants}
             whileHover="hover"
-            className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-lg p-6 rounded-2xl cursor-pointer transition"
+            className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-lg p-6 rounded-2xl cursor-pointer transition text-left"
           >
-            <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">{item.title}</h3>
-            <p className="text-gray-600 dark:text-gray-300">{item.desc}</p>
+            <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white text-center">
+              {item.title}
+            </h3>
+
+            <ul className="space-y-2 text-gray-700 dark:text-gray-300 list-disc list-inside">
+              {item.desc.map((line, index) => (
+                <li key={index}>{line}</li>
+              ))}
+            </ul>
           </motion.div>
         ))}
       </motion.div>

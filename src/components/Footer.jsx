@@ -1,6 +1,6 @@
 "use client";
 
-import { FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaYoutube, FaFacebook, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer({ darkMode }) {
   return (
@@ -12,20 +12,21 @@ export default function Footer({ darkMode }) {
       }`}
     >
       <div className="mb-4 text-lg font-medium">🌐 Ikuti kami di sosial media:</div>
+
       <div className="flex justify-center gap-6 mb-6">
-        {/* TikTok */}
+        {/* Facebook */}
         <a
-          href="https://www.tiktok.com/@hirma.al.furqon?_t=8obqbO3cf8y&_r=1"
+          href="https://www.facebook.com/hiroteluknaga" // 🔵 Ganti dengan link FB kamu
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-500 hover:text-black hover:scale-110 transition transform"
+          className="text-gray-500 hover:text-blue-600 hover:scale-110 transition transform"
         >
-          <FaTiktok size={24} />
+          <FaFacebook size={24} />
         </a>
 
         {/* Instagram */}
         <a
-          href="https://www.instagram.com/hirma.alfurqon/"
+          href="https://www.instagram.com/hiroteluknaga?r=nametag"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-500 hover:text-pink-500 hover:scale-110 transition transform"
@@ -35,12 +36,23 @@ export default function Footer({ darkMode }) {
 
         {/* YouTube */}
         <a
-          href="https://www.youtube.com/@hirmaalfurqon?si=l9FeL0_UQ0hiC82V"
+          href="https://www.youtube.com/channel/UCkmvfA4BSUu0VuxXpmNGbvg"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-500 hover:text-red-600 hover:scale-110 transition transform"
         >
           <FaYoutube size={24} />
+        </a>
+
+        {/* WhatsApp */}
+        <a
+          href="https://wa.me/62 896-5460-4540
+          " // 💚 Ganti dengan nomor WA kamu (format internasional tanpa +)
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-500 hover:text-green-500 hover:scale-110 transition transform"
+        >
+          <FaWhatsapp size={24} />
         </a>
       </div>
 
@@ -48,7 +60,7 @@ export default function Footer({ darkMode }) {
       <p className="text-sm md:text-base">
         📍 Alamat:{" "}
         <a
-          href="https://maps.app.goo.gl/rFk9qUxsT8qwDNrp9"
+          href="https://maps.app.goo.gl/ogbrQkoiVN9xUvvk7"
           target="_blank"
           rel="noopener noreferrer"
           className="text-indigo-600 hover:underline"
@@ -56,7 +68,7 @@ export default function Footer({ darkMode }) {
           Klik untuk melihat di Maps
         </a>
       </p>
-      <p className="text-sm md:text-base mt-2">Masjid Al-Furqon</p>
+      <p className="text-sm md:text-base mt-2">YAYASAN HIDAYATURROHMAN</p>
     </footer>
   );
 }

@@ -36,7 +36,7 @@ export default function HeroSection() {
       {/* Konten */}
       <div className="relative z-10 text-white px-4">
         <h1 className="text-5xl md:text-6xl font-bold mb-3 drop-shadow-lg">
-        Masjid Al-Furqon
+        YAYASAN HIDAYATURROHMAN
         </h1>
         <p className="text-lg md:text-xl drop-shadow-md">
           “Tempat beribadah, belajar, dan berbuat baik.”
